@@ -28,4 +28,4 @@ I sorted the features by their ranking on this metric and found the 5 features w
 
 I performed a search on how many top k features should be kept by using cross validation, where k could be 5, 10, 15, or 20. Keeping the top 20 features resulted in a model that performed the best in cross-validation, so I went ahead and retrained the model on the training dataset with those features and tested it on the test set.
 
-Ultimately I found that there really wasn't a difference between the test accuracy of the XGBoost model that used the top 20 features and the model that used all of the featues. This is expected, since the models only differ in whether they take in the two lowest raking features. However, since it still used less features, I went ahead and saved it as well.
+Ultimately, I found that there really wasn't a difference between the test accuracy of the XGBoost model that used the top 20 features and the model that used all of the featues. This is expected, since the models only differ in whether they take in the two lowest raking features. However, since it still used less features, I went ahead and saved it as well.
