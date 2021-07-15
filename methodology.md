@@ -24,7 +24,7 @@ I would then go on to use these hyperparameters to work with an XGBoost model an
 
 I used mutual information scores to rank the importance of the features in classifying satisfaction. An explanation of mutual information is offered in the IPython notebook.
 
-I sorted the features by their ranking on this metric and found the 5 features with the top 5 MI scores were f13, f8, TierNumber, UseNumber, f15, and f14. These were thus our most informative features. Moreover,  the features with the lowest 5 scores and thus least informative features were f11, f23, f9, GenderNumber, and f22.
+I sorted the features by their ranking on this metric and found the 5 features with the top 5 MI scores were f13, f8, TierNumber, UseNumber, and f15. These were thus our most informative features. Moreover,  the features with the lowest 5 scores and thus least informative features were f11, f23, f9, GenderNumber, and f22.
 
 I performed a search on how many top k features should be kept by using cross validation, where k could be 5, 10, 15, or 20. Keeping the top 20 features resulted in a model that performed the best in cross-validation, so I went ahead and retrained the model on the training dataset with those features and tested it on the test set.
 
