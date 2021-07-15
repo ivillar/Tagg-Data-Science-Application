@@ -1,5 +1,0 @@
-sklearn
-pandas
-xgboost
-matplotlib
-seaborn
